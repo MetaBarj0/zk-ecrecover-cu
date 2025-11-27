@@ -2,7 +2,7 @@
 
 This is a simple Noir demo that shows how to use dependencies in a Noir project.
 
-This circuit verifies a signature without revealing the signing address. 
+This circuit verifies a signature without revealing the signing address.
 
 ## Usage
 
@@ -75,7 +75,7 @@ Do this step if you want to create a verifier smart contract without creating a 
 nargo compile
 ```
 
-### 5. Execute the circuit and generate a witness 
+### 5. Execute the circuit and generate a witness
 
 This step will also compile the circuit.
 
@@ -88,7 +88,6 @@ nargo execute
 ```bash
 bb prove -b ./target/circuits.json -w ./target/circuits.gz -o ./target
 ```
-
 
 ```bash
 bb prove --oracle_hash keccak -b ./target/circuits.json -w ./target/circuits.gz -o ./target
@@ -121,3 +120,4 @@ bb verify -k ./target/vk -p ./target/proof
 ```bash
 bb write_solidity_verifier -k ./target/vk -o ./target/Verifier.sol
 ```
+
